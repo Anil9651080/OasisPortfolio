@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>personal portfoli website Create</title>
+</head>
+
+<body>
+    <!-----start Hearder section----->
+    <div id="hearder">
+        <div class="contenier">
+            <nav>
+                <img src="img/logo.jpeg" alt="logo" class="logo">
+                <ul id="sidmenu">
+                    <li><a href="#hearder">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="hearder-text">
+                <p>Web developer</p>
+                <h1>Hi I am <span>Anil Sharma</span> <br> Form Siddhartha Nagar</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-----End Hearder section----->
+
+
+    <!-----start About section----->
+    <div id="about">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/team1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>Hi, my name is Anil Sharma and I'm from Siddhartha Nagar, UttarPradesh, India.
+
+                        I am currently a 4rd-year undergraduate in the Computer Science Engineering Concentration at
+                        Bansal Institute of Engineering and Technology, Lucknow.
+
+                        As a Full-Stack developer, I enjoy tackling new challenges and continuously expanding my
+                        skillset.
+
+                        I am proficient in Java as well as have knowledge in programming languages such as Java, C++,
+                        Html, Css ,JavaScripts .
+
+                        I have a passion for working with React.js ,Node.js, MongoDB, and modern Javascript libraries
+                        and frameworks like React.js
+
+                        I am also interested in building new Web Technologies and Products, as well as exploring areas
+                        related to New Technologies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----End About section----->
+
+
+
+    <!----portfolio section Start ----->
+
+    <div id="portfolio">
+        <div class="contenier">
+            <h1 class="sub-title">My Mork</h1>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/Portfolio2.png">
+                    <div class="layer">
+                        <h3>Job Portal Project</h3>
+                        <p>Online Job portal is an application that connects employer and job seekers where employers
+                            are the source of resources and job seekers can find and apply for their target job.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="img/Portfolio3.png">
+                    <div class="layer">
+                        <h3>Online E-learning Website</h3>
+                        <p>This is a simple static website using HTML CSS Bootstrap and JavaScript.Here Users can easy
+                            to read and download books and materials etc.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="img/Portfolio4.png">
+                    <div class="layer">
+                        <h3>QuizApp Project</h3>
+                        <p>Welcome to the blog. In this article, We create a Quiz Website using HTML, CSS, And
+                            JavaScript. We give you the Complete source code of the Quiz Website.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="#" class="btn">Learn More</a>
+
+        </div>
+    </div>
+    <!----portfolio section End ----->
+
+
+    <!----Contact section Start ----->
+    <div id="contact">
+        <div class="contenier">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sharma9651080@example.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>9651080271</p>
+                    
+                    <a href="" class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright@ Anil. Sharma</p>
+        </div>
+    </div>
+
+    <!----Contact section End ----->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+        function openmenu() {
+            sidmenu.style.right = "0";
+        }
+        function closemenu() {
+            sidmenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
